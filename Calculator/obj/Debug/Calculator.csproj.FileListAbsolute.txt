@@ -1,0 +1,8 @@
+c:\Users\Alex\documents\visual studio 2013\Projects\Test\Calculator\bin\Debug\Calculator.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\Test\Calculator\bin\Debug\Calculator.pdb
+c:\Users\Alex\documents\visual studio 2013\Projects\Test\Calculator\obj\Debug\Calculator.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\Test\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\BoilerCalculator\Calculator\bin\Debug\Calculator.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\BoilerCalculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\BoilerCalculator\Calculator\obj\Debug\Calculator.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\BoilerCalculator\Calculator\obj\Debug\Calculator.pdb

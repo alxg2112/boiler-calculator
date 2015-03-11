@@ -1,0 +1,96 @@
+﻿@model App.Models.Calculator
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Calculator</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BoilerOutput)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BoilerOutput)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BoilerHeatUpTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BoilerHeatUpTime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HotWaterConsumed)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HotWaterConsumed)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HotWaterPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HotWaterPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ColdWaterPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ColdWaterPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BoilerPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BoilerPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BoilerCapacity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BoilerCapacity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ElectricityPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ElectricityPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Period)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Period)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Profit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Profit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaybackTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaybackTime)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

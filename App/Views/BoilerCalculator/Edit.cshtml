@@ -1,0 +1,102 @@
+﻿@model App.Models.Calculator
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Calculator</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BoilerOutput)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BoilerOutput)
+            @Html.ValidationMessageFor(model => model.BoilerOutput)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BoilerHeatUpTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BoilerHeatUpTime)
+            @Html.ValidationMessageFor(model => model.BoilerHeatUpTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HotWaterConsumed)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HotWaterConsumed)
+            @Html.ValidationMessageFor(model => model.HotWaterConsumed)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.HotWaterPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.HotWaterPrice)
+            @Html.ValidationMessageFor(model => model.HotWaterPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ColdWaterPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ColdWaterPrice)
+            @Html.ValidationMessageFor(model => model.ColdWaterPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BoilerPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BoilerPrice)
+            @Html.ValidationMessageFor(model => model.BoilerPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BoilerCapacity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.BoilerCapacity)
+            @Html.ValidationMessageFor(model => model.BoilerCapacity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ElectricityPrice)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ElectricityPrice)
+            @Html.ValidationMessageFor(model => model.ElectricityPrice)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Period)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Period)
+            @Html.ValidationMessageFor(model => model.Period)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

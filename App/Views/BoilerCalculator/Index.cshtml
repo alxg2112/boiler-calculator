@@ -1,0 +1,93 @@
+﻿@model IEnumerable<App.Models.Calculator>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BoilerOutput)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoilerHeatUpTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HotWaterConsumed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HotWaterPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ColdWaterPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoilerPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoilerCapacity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ElectricityPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Period)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Profit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaybackTime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoilerOutput)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoilerHeatUpTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HotWaterConsumed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HotWaterPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ColdWaterPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoilerPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BoilerCapacity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ElectricityPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Period)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Profit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaybackTime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
