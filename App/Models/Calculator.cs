@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -13,46 +14,55 @@ namespace App.Models
         /// <summary>
         /// Boiler output (kiloWatts)
         /// </summary>
+        [DisplayName("Boiler output:")]
         public double BoilerOutput { get; set; }
 
         /// <summary>
         /// Boiler heat up time (hours)
         /// </summary>
+        [DisplayName("Boiler heat up time:")]
         public double BoilerHeatUpTime { get; set; }
 
         /// <summary>
         /// Amount of hot water comsumed monthly (cubic meters)
         /// </summary>
+        [DisplayName("Hot water consumed:")]
         public double HotWaterConsumed { get; set; }
 
         /// <summary>
         /// Hot water price ($ / cubic meter)
         /// </summary>
+        [DisplayName("Hot water price:")]
         public double HotWaterPrice { get; set; }
 
         /// <summary>
         /// Cold water price ($ / cubic meter)
         /// </summary>
+        [DisplayName("Cold water price:")]
         public double ColdWaterPrice { get; set; }
 
         /// <summary>
         /// Boiler price ($)
         /// </summary>
+        [DisplayName("Boiler price:")]
         public double BoilerPrice { get; set; }
 
         /// <summary>
         /// Boiler capacity (liters)
         /// </summary>
+        [DisplayName("Boiler capacity:")]
         public double BoilerCapacity { get; set; }
 
         /// <summary>
         /// Electricity price ($ / kiloWatt)
         /// </summary>
+        [DisplayName("Elecricity price:")]
         public double ElectricityPrice { get; set; }
 
         /// <summary>
         /// Period (months)
         /// </summary>
+        [DisplayName("Period:")]
         public double Period { get; set; }
 
         /// <summary>
